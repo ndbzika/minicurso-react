@@ -1,10 +1,10 @@
 import P from 'prop-types';
 
-export function Cartao(props) {
+export function Cartao({ cabecalho, corpo }) {
   return (
     <div>
-      <h2>{props.cabecalho}</h2>
-      <p>{props.corpo}</p>
+      <h2>{cabecalho}</h2>
+      <p>{corpo}</p>
     </div>
   );
 }
