@@ -1,7 +1,11 @@
+import { Cartao } from './components/Cartao';
+
 function App() {
   return (
     <>
-      <h1>Olá mundo</h1>
+      <div className='centro'>
+        <Cartao />
+      </div>
     </>
   );
 }
