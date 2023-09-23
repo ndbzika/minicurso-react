@@ -1,8 +1,15 @@
-export function Cartao() {
+import P from 'prop-types';
+
+export function Cartao(props) {
   return (
-    <div className='cartao'>
-      <h2 className='cartao__cabecalho'>Curso React</h2>
-      <p className='cartao__corpo'>SertaoComp IV</p>
+    <div>
+      <h2>{props.cabecalho}</h2>
+      <p>{props.corpo}</p>
     </div>
   );
 }
+
+Cartao.propTypes = {
+  cabecalho: P.string.isRequired,
+  corpo: P.string.isRequired,
+};
