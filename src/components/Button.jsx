@@ -1,11 +1,7 @@
-import { useState } from 'react';
+import useCounter from '../hooks/useCounter';
 
 export const Button = () => {
-  const [contador, setContador] = useState(0);
+  const { contador, incrementar } = useCounter(0);
 
-  const handleIncrementCount = () => {
-    setContador(contador + 1);
-  };
-
-  return <button onClick={handleIncrementCount}>{contador} Likes</button>;
+  return <button onClick={incrementar}>{contador} Likes</button>;
 };
