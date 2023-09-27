@@ -1,4 +1,4 @@
-div {
+.cartao {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -10,20 +10,20 @@ div {
   align-items: center;
   justify-content: center;
 }
-img {
+.cartao img {
   border-radius: 4px;
   height: 200px;
   width: 300px;
   object-fit: contain;
 }
 
-div h2 {
+.cartao .cartao__nome {
   font-size: 1.5rem;
   margin-top: 9px;
   margin-bottom: 25px;
 }
 
-div p {
+.cartaoFuncao {
   font-size: 1.2rem;
   color: #7c7c7c;
   margin: 0;
