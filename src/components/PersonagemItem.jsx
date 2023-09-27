@@ -5,7 +5,7 @@ export const PersonagemItem = ({ nome = 'One Piece' }) => {
   return (
     <li style={{ color: '#fff' }}>
       {nome}
-      <Divisor />
+      <Divisor comprimento='310px' />
     </li>
   );
 };
