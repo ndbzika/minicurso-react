@@ -4,7 +4,11 @@ import { Cartao } from './components/Cartao';
 function App() {
   return (
     <>
-      <Cartao cabecalho='Curso React' corpo='SertãoComp IV' />
+      <Cartao
+        foto='/luffy.png'
+        nome='Monkey D. Luffy'
+        funcao='Capitão do bando dos chapéus de palha'
+      />
       <Button />
     </>
   );

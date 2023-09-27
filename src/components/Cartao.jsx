@@ -1,15 +1,18 @@
 import P from 'prop-types';
+import '../styles/cartao.css';
 
-export function Cartao({ cabecalho, corpo }) {
+export function Cartao({ foto = '/logo.png', nome, funcao }) {
   return (
-    <div>
-      <h2>{cabecalho}</h2>
-      <p>{corpo}</p>
+    <div className='cartao'>
+      <img src={foto} alt={foto} />
+      <h2 className='cartao__nome'>{nome}</h2>
+      <p className='cartaoFuncao'>{funcao}</p>
     </div>
   );
 }
 
 Cartao.propTypes = {
-  cabecalho: P.string.isRequired,
-  corpo: P.string.isRequired,
+  foto: P.string.isRequired,
+  nome: P.string.isRequired,
+  funcao: P.string.isRequired,
 };
