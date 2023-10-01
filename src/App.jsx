@@ -1,6 +1,4 @@
 import { Cartao } from './components/Cartao';
-import { Divisor } from './components/Divisor';
-import { PersonagemItem } from './components/PersonagemItem';
 import useCounter from './hooks/useCounter';
 
 import './styles/global.css';
@@ -9,29 +7,51 @@ function App() {
   const { contador, incrementar } = useCounter(0);
   return (
     <main>
-      <div className='menu__lateral'>
+      <header className='menu'>
         <img src='/logo.png' alt='One Piece Logo' />
-        <Divisor />
-        <ul>
-          <PersonagemItem nome='Monkey D. Luffy' />
-          <PersonagemItem nome='Roronoa Zoro' />
-          <PersonagemItem nome='Nami' />
-          <PersonagemItem nome='Usopp' />
-          <PersonagemItem nome='Sanji' />
-          <PersonagemItem nome='Tony Tony Chopper' />
-          <PersonagemItem nome='Nico Robin' />
-        </ul>
-        <button onClick={incrementar} className='like__button'>
+        <button className='like__button' onClick={incrementar}>
           {contador} Likes
         </button>
-      </div>
-      <div id='content'>
-        <Cartao
-          foto='/luffy.png'
-          nome='Monkey D. Luffy'
-          funcao='Capitão do bando dos chapéus de palha'
-        />
-      </div>
+      </header>
+      <section className='personagens'>
+        <div id='conteudo-principal'>
+          <Cartao
+            foto='/luffy.png'
+            nome='Monkey D. Luffy'
+            funcao='Capitão do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/zoro.png'
+            nome='Roronoa Zoro'
+            funcao='Espadachim do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/nami.png'
+            nome='Nami'
+            funcao='Navegadora do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/sanji.png'
+            nome='Sanji'
+            funcao='Cozinheiro do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/usopp.jpg'
+            nome='Usopp'
+            funcao='Atirador do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/chopper.png'
+            nome='Tony Tony Chopper'
+            funcao='Médico do bando dos chpáeus de palha'
+          />
+          <Cartao
+            foto='/robin.png'
+            nome='Nico Robin'
+            funcao='Arqueóloga do bando dos chpáeus de palha'
+          />
+        </div>
+      </section>
     </main>
   );
 }

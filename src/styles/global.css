@@ -1,14 +1,11 @@
 main {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
-.menu__lateral {
-  max-width: 400px;
+.menu {
+  max-width: 100vw;
   width: 100%;
-  height: 100%;
+  height: 12rem;
   background-color: #ab8a8a;
   display: flex;
   flex-direction: column;
@@ -16,27 +13,17 @@ main {
   justify-content: flex-start;
 }
 
-.menu__lateral img {
+.menu img {
   border-radius: 4px;
   height: 200px;
   width: 300px;
   object-fit: contain;
 }
 
-.menu__lateral ul {
-  margin: 0 auto;
-  padding: 5%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 22px;
-  margin-top: 90px;
-  margin-bottom: 130px;
-}
-
-.menu__lateral button {
+.menu button {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
   width: 15rem;
   height: 50px;
   background-color: #fff;
@@ -49,16 +36,24 @@ main {
   transition: all 0.2s ease-in-out;
 }
 
-.menu__lateral button:hover {
+.menu button:hover {
   background-color: #000;
   color: #fff;
 }
 
-#content {
-  width: 100%;
-  height: 100%;
+.personagens {
+  width: 100vw;
+  max-height: 100%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.personagens #conteudo-principal {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  gap: 5rem;
 }

@@ -1,7 +1,6 @@
 import P from 'prop-types';
 import '../styles/cartao.css';
-
-export function Cartao({ foto = '/logo.png', nome, funcao }) {
+export function Cartao({ foto, nome, funcao }) {
   return (
     <div className='cartao'>
       <img src={foto} alt={foto} />
